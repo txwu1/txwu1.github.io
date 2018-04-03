@@ -3,7 +3,7 @@ var treeMade = false;
 
 function getTime(){
 	var d = new Date();
-	return d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+	return d.getMonth() + "-" + d.getDate() + "-" + d.getFullYear() + ": " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 };
 
 $(document).ready(function(){
@@ -13,11 +13,11 @@ $(document).ready(function(){
 	function addRow(){
 		table.append("<tr></tr>");
 		$("tr").last().append('<td></td>');
-		$("td").last().val(getTime());
+		$("td").last().text("Last clicked: " + getTime());
 	};
 
 	function createTree(){
-		table.val("Click to add a row");
+		createTreeButton.text("Click to add a row");
 		table.append("<tr></tr>");
 		$("tr").last().append('<th>Button Clicks</th>');
 	};
