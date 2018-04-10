@@ -4,11 +4,12 @@ function getCurrentTime(){
 	if (d.getHours() > 12){
 		hey = "PM";
 	}
-	return (d.getHours() % 12) + ":" + d.getMinutes() + ":" + d.getSeconds() + " " + hey;
+	return (d.getHours() % 12) + ":" + d.getMinutes() + ":" + ("0" +
+	d.getSeconds()).slice(-2) + " " + hey;
 };
 
 $(document).ready(function(){
 	var update = $(".FileHeader");
-	update.last().append("<p></p>");
+	update.last().append("<span></span>");
 	$(".FileHeader").children().last().text("Last Loaded: " + getCurrentTime());
 });

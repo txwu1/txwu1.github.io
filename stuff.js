@@ -3,7 +3,8 @@ var treeMade = false;
 
 function getTime(){
 	var d = new Date();
-	return d.getMonth() + "-" + d.getDate() + "-" + d.getFullYear() + ": " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+	return d.getMonth() + "-" + d.getDate() + "-" + d.getFullYear() + ": " +
+	d.getHours() + ":" + d.getMinutes() + ":" + ("0" + d.getSeconds()).slice(-2);
 };
 
 $(document).ready(function(){

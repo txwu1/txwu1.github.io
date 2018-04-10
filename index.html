@@ -1,17 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link href="style.css" rel="stylesheet">
     <title>Thomas's GitHub Site</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+<body>
     <section class="Page">
-    <div>
-        <header class="FileHeader">
-            <h1 class="Header">Thomas's GitHub Test Site </h1>
-            <p><i>Last Updated 4/2/18 at 9:16PM</i></p>
-			<script src="time.js"></script>
-        </header>
+    <div class="FileHeader">
+		<h1 class="Header">Thomas's GitHub Test Site </h1>
+		<p><i>Last Updated 4/2/18 at 9:16PM</i></p>
+		<script src="time.js"></script>
     </div>
+	<div>
+		<ul class="NavBar">
+			<li class="navBarLI"><a class="NavBarA" href="videos.html">Videos</a></li>
+			<li class="navBarLI"><a class="NavBarA" href="contact.html">Contact Info</a><li>
+			<li class="navBarLI"><a class="NavBarA" href="about.html">About</a><li>
+		</ul>
+	</div>
     <div class="Body">
         <p>
             Hi, this is my personal test site.
@@ -21,16 +28,12 @@
         <span><strong><br>Tune in for more features</strong></span><br>
         <img src="tylenolBottle.JPG" alt="Tylenol" hspace=10 
         width=537.5 height=302.5 class="Image"><br>Common Area</img>
-        <br>
+        <br/>
+
 		<button id="tableButton">Click this to create a table</button>
 		<table id="table"></table>
 		<script src="stuff.js"></script>
     </div>
     </section>
-    <div class="Video">
-        <p>This is for the video</p>
-        <v src="Test.MOV">Testing... Currently not displayed due to incorrect
-        format</v>
-    </div>
-    
+</body>
 </html>
