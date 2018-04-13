@@ -4,7 +4,7 @@ function getCurrentTime(){
 	if (d.getHours() > 12){
 		hey = "PM";
 	}
-	return (d.getHours() % 12) + ":" + d.getMinutes() + ":" + ("0" +
+	return (d.getHours() % 12) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" +
 	d.getSeconds()).slice(-2) + " " + hey;
 };
 

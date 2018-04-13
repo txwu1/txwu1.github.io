@@ -1,6 +1,10 @@
+html, body{
+	height: 100%;
+}
 .Page{
     background-color: rgb(220, 220, 220);
 	bottom: 0px;
+	min-height: 100%;
  }
  .FileHeader{
     background-color: orange;
@@ -41,3 +45,25 @@
 	background-color: #333;
  }
 
+.End{
+	min-width: 99.15%;
+	min-height: 40px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #333;
+	background-position: center;
+	text-align: center;
+	line-height: 40px;
+}
+
+.EndText{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
