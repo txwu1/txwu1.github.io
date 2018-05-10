@@ -19,17 +19,17 @@ $(document).ready(function(){
 			clear();
 		}
 		table.append("<tr></tr>");
-		var row = $("tr").last();
+		count++;
+		var row = table.children().last();
 		row.append('<td></td>');
 		row.text("Last clicked: " + getTime());
 		row.addClass("row");
-		count++;
 	};
 
 	function createTree(){
 		createTreeButton.text("Click to add a row");
 		table.append("<tr></tr>");
-		$("tr").last().append('<th>Button Clicks</th>');
+		$(table, "tr").last().append('<th>Button Clicks</th>');
 	};
 
 	createTreeButton.click(function(evt){
@@ -57,7 +57,8 @@ $(document).ready(function(){
 	resetButton.click(function(evt){
 		evt.preventDefault();
 		table.children().remove();
-		createTreeButton.text("Click this to create a table");
+		createTreeButton.text("Click this to create a table")
+		count = 0;
 		treeMade = false;
 	});
 });

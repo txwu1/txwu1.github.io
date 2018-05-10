@@ -1,69 +1,50 @@
+
+html, body, div, h1, p, a, video{
+	margin: 0;
+	padding: 0;
+}
+
 html, body{
 	height: 100%;
 }
-.Page{
-    background-color: rgb(220, 220, 220);
-	bottom: 0px;
-	min-height: 100%;
- }
- .FileHeader{
-    background-color: orange;
- }
- .Header {
-    color: white;
-    text-align: center;
-	background-color: #333;
-    border-bottom: solid black;
- }
- .Image {
-    image-orientation: -90deg;
-    text-align: center;
- }
- .Body{
- 	margin: auto;
-	text-align: center;
- }
 
- tr:hover {background-color:#f5f5f5;}
-
- .NavBar{
- 	list-style-type: none; /* removes bullet point */ 
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
- } 
-
- .navBarLI{
-	float: left;
- }
-
- .NavBarA{
-	display: block;
-	padding: 8px;
-	color: white;
-	background-color: #333;
- }
-
-.End{
-	min-width: 99.15%;
-	min-height: 40px;
-	position: fixed;
-	bottom: 0px;
-	background-color: #333;
-	background-position: center;
-	text-align: center;
-	line-height: 40px;
+body{
+	font-size: 20px;
 }
 
-.EndText{
-	color: white;
-	text-transform: uppercase;
-	vertical-align: middle;
+.background{
+	width: 100%;
+	height: 100%;
+	background:url("IMG_1186.JPG") no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	
 }
 
-#table{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
+.home{
+	text-align: center;
+	position: relative;
+	top: 20%;
+}
+
+#construct{
+	font-weight: 400;
+	font-size: 100%;
+	color: white;
+	font-size: 36px;
+
+}
+
+.home_button{
+	padding-top: 1%;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	text-shadow: 2px 2px 1em #333;
+}
+
+.home_button:visited{
+	color: white;
 }

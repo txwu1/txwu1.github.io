@@ -1,10 +1,12 @@
 function getCurrentTime(){
 	var d = new Date();
 	var hey = "AM";
-	if (d.getHours() > 12){
+	let hours = d.getHours();
+	if (hours > 12){
 		hey = "PM";
+		hours -= 11;
 	}
-	return (d.getHours() % 12) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" +
+	return hours + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" +
 	d.getSeconds()).slice(-2) + " " + hey;
 };
 
