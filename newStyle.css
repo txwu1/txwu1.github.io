@@ -55,6 +55,7 @@ body{
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
+	color: white;
 }
 
 .home_about a:after{
@@ -89,6 +90,29 @@ body{
 	height: 100%;
 }
 
+@media screen and (max-height: 480px), (max-width: 325px){
+	.home{
+		background:url("IMG_2344.JPG") no-repeat fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
+
+	.home_bimg{
+		display: none;
+	}
+
+	body{
+		font-size: 14px;
+	}
+
+	.home_textcontainer{
+		top: 5%;
+	}
+	
+
+}
+
 #sideBar{
 	font-size: 150%;
 	height: 100%;
@@ -101,6 +125,8 @@ body{
 	flex-direction: column;
 	right: 0;
 	width: 20%;
+	min-width: 200px;
+	min-height: 100%;
 }
 
 .sideBar_links{
@@ -129,6 +155,17 @@ body{
 	color: white;
 	font-size: 350%;
 	margin-right: 15px;
+
+}
+
+@media screen and (max-height: 480px), (max-width: 325px){
+	.sideBtn{
+		margin-right: 5px;
+	}
+	.side{
+		top: 0%;
+	}
+
 }
 
 .sideBtn:hover{
