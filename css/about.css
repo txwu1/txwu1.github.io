@@ -1,0 +1,114 @@
+.circle_img{
+	border-radius: 50%;
+}
+
+.white_bg{
+	background-color: white;
+}
+
+.dark_container{
+	background-color: #494949;
+}
+
+.subheader_txt{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+	width: 100%;
+	font-family: Verdana;
+}
+
+.header_txt{
+	padding-top: 1em;
+	text-align: center;
+	width: 100%;
+	font-family: Arial;
+}
+
+.light_txt{
+	color: white;
+}
+
+
+#profile_header_txt{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5px;
+	color: white;
+}
+
+#profile_top{
+	padding-top: 2em;
+	background-color: #D4511e;
+	padding-bottom: 1em;
+}
+
+#profile_img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+	min-height: 250px;
+	min-width: 250px;
+	max-width: 50%;
+}
+
+.skills_img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30%;
+	min-width: 100px;
+	padding: 1em;
+}
+
+#experience{
+	padding-bottom: 1em;
+}
+
+.center_card{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#carousel_db{
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2em;
+}
+
+.home_link:visited{
+	color: white;
+}
+
+.bottom_nav{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0.25em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-radius: 10%;
+}
+
+.contact_form{
+	margin: auto;
+	display: block;
+	max-width: 70%;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down_arrow{
+  transform: rotate(45deg) translateY(-4px);
+  -webkit-transform: rotate(45deg) translateY(-4px);
+}
