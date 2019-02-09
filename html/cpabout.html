@@ -92,6 +92,24 @@
 		</div>
 		<div class="row">
 			<div class="subheader_txt light_txt">
+				<h5 style="font-size:1.75rem">Projects</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="card center_card">
+				<div class=card-body">
+					<h5 class="card-title" style="text-align: center">Personal Site</h5>
+					<h6 class="card-subtitle" style="text-align: center">Feb 2019</h6>
+					<ul class="card-text" style="list-style-type: square">
+						<li>Displays what you are currently viewing on the page</li>
+						<li>Utilizes Bootstrap for the css, formatting, and carousel</li>
+						<li>Contains a Contact Form (Coming Soon) which is handled by my backend on the Google App Engine</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="subheader_txt light_txt">
 				<h5 style="font-size:1.75rem">Competitions</h5>
 			</div>
 			<div class="light_txt" style="display:block; margin:auto">
@@ -129,11 +147,72 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid dark_container">
-		<divi class="row">
-			<div class="bottom_nav">
-				<a class="home_link" href="../index.html" color="white">Home</a>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header_txt">
+				<h1>Activities</h1>
 			</div>
+		</div>
+		<div class="row">
+			<div class="subheader_txt">
+				<h5 style="font-size:1.75rem">UCSD Dragonboat</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div id="carousel_db" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" style="">
+					<div class="carousel-item active">
+						<!-- <img src="../pictures/cpplogo.png" class="d-block w-100" alt=""> -->
+						<svg>
+							<rect fill="#777" width="100%" height="100%"></rect>
+						</svg>
+					</div>
+					<div class="carousel-item">
+						<svg>
+							<rect fill="#555" width="100%" height="100%"></rect>
+						</svg>
+					</div>
+					<div class="carousel-item">
+						<svg>
+							<rect fill="#333" width="100%" height="100%"></rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="row dark_container">
+		<div class="header_txt">
+			<p>
+				<a class="btn btn-primary" data-toggle="collapse" href="#contact_btn" role="button" aria-expanded="false" aria-controls="contact_btn">Contact Me &nbsp<i class="down_arrow"></i></a>
+</p>
+			<div class="col">
+				<div class="collapse multi-collapse" id="contact_btn">
+					<div class="card card-body contact_form" style="text-align: left">
+						<form>
+							<div class="form-group">
+								<label for="fullname">Full Name</label>
+								<input type="text" class="form-control" id="fullname" placeholder="Enter Your Full Name">
+							</div>
+							<div class="form-group">
+								<label for="emailaddress">Email Address</label>
+								<input type="email" class="form-control" id="emailaddress" placeholder="Enter Your Email Address">
+							</div>
+							<div class="form-group">
+								<label for="phonenumber">Phone Number</label>
+								<input type="tel" class="form-control" id="phonenumber" placeholder="Ex: (123) 456-7890">
+							</div>
+							<div class="form-group">
+								<label for="message">Leave a Message</label>
+								<input type="text" class="form-control" id="message">
+							</div>
+							<button id="form_submit" type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom_nav">
+			<a class="home_link" href="index.html" color="white">Home</a>
 		</div>
 	</div>
 </body>
