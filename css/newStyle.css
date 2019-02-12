@@ -8,21 +8,23 @@ html, body{
 	height: 100%;
 }
 
-body{
-	font-size: 20px;
-}
-
 .home{
 	text-align: center;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	color: white;
+	font-family: Times;
+	background:url("../pictures/IMG_2344.JPG") no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 .home_textcontainer{
 	position: relative;
 	top: 10%;
+	font-size: 20px;
 }
 
 .home_title{
@@ -81,29 +83,8 @@ body{
 	color: white;
 }
 
-.home_bimg{
-	position: absolute;
-	z-index: -1;
-	left: 0;
-	top: 0;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-}
-
-@media screen and (max-height: 480px), (max-width: 325px){
-	.home{
-		background:url("../pictures/IMG_2344.JPG") no-repeat fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-	}
-
-	.home_bimg{
-		display: none;
-	}
-
-	body{
+@media screen and (max-height: 480px) and (max-width: 375px){
+	.home_textcontainer{
 		font-size: 14px;
 	}
 
@@ -114,81 +95,3 @@ body{
 
 }
 
-/*
-#sideBar{
-	font-size: 150%;
-	height: 100%;
-	background-color: #8780ba;
-	position: fixed;
-	z-index: 1;
-	text-align: center;
-	padding-top: 5px;
-	display: none;
-	flex-direction: column;
-	right: 0;
-	width: 20%;
-	min-width: 200px;
-	min-height: 100%;
-}
-
-.sideBar_links{
-	padding-top: 20%;
-	width: 50%;
-	margin: 0 25%;
-}
-
-.sideBar_links a{
-	text-decoration: none;
-}
-
-.sideBar_links a:visited{
-	color: white;
-}
-
-.side{
-	z-index: 2;
-	position: fixed;
-	right: 0;
-	margin-right: 1%;
-	top: 2%;
-}
-
-.sideBtn{
-	color: white;
-	font-size: 350%;
-	margin-right: 15px;
-
-}
-
-@media screen and (max-height: 480px), (max-width: 325px){
-	.sideBtn{
-		margin-right: 5px;
-	}
-	.side{
-		top: 0%;
-	}
-
-}
-
-.sideBtn:hover{
-	cursor: pointer;
-}*/
-
-
-.Dark{
-	background-color: #333;
-	min-height: 100%;
-}
-
-
-.firstImages{
-	display: block;
-	margin: auto;
-	width: 82.75%;
-	font-size: 0px;
-}
-
-.resizeFirstImages{
-	width: 504px;
-	height: 378px;
-}
