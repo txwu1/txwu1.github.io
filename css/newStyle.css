@@ -86,13 +86,13 @@ body{
 	z-index: -1;
 	left: 0;
 	top: 0;
-	width: 100%;
+	min-width: 100%;
 	height: 100%;
 }
 
 @media screen and (max-height: 480px), (max-width: 325px){
 	.home{
-		background:url("IMG_2344.JPG") no-repeat fixed;
+		background:url("../pictures/IMG_2344.JPG") no-repeat fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
