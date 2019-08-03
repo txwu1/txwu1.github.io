@@ -1,0 +1,41 @@
+html, body, div, h1, p, a, video{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	font-size: 20px;
+}
+
+.home{
+	text-align: center;
+	align-items: center;
+	max-width: 960px;
+	padding-top: 5rem;
+}
+
+.home_pic_body{
+
+}
+
+.home_title{
+
+}
+
+.home_desc{
+	margin-top: 5rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home_contact{
+	margin-top: 2.5rem;
+	font-size: 150%;
+}
+
+.col a{
+	color: inherit;
+}
