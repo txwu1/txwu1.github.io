@@ -27,13 +27,14 @@ body{
 }
 
 .home_desc{
-	margin-top: 5rem;
+	margin-top: 4rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home_contact{
 	margin-top: 2.5rem;
 	font-size: 150%;
+	color: rgba(0, 35, 235, 0.685);
 }
 
 .col a{
