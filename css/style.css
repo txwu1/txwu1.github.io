@@ -15,11 +15,34 @@ body{
 	text-align: center;
 	align-items: center;
 	max-width: 960px;
-	padding-top: 5rem;
+	padding-top: 1.5rem;
 }
 
 .home_pic_body{
 
+}
+
+.profile_pic{
+	display: block;
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.link_to_about{
+	color: black;
+	text-decoration: none;
+}
+
+.link_to_about:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.link_to_about:visited{
+	color: black;
+	text-decoration: none;
 }
 
 .home_title{
@@ -27,7 +50,7 @@ body{
 }
 
 .home_desc{
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

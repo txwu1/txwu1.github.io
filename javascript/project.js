@@ -17,8 +17,10 @@ $(document).ready(function(){
     {
         title: "ZipLog",
         durationString: "July 2019 - Present",
-        desc: "...",
-        tech: "Node.js Express.js, Express Handlebars, jQuery, Firebase Authentication, Firestore, Javascript"
+        desc: "This is an Express web application which enables users to log their fitness journey. Users can either " +
+                "input their workouts, completed or uncompleted, and other updates of their progress. They can also see a log " +
+                "of all these posts to track their progression.",
+        tech: "Node.js, Express.js, Express Handlebars, jQuery, Firebase Authentication, Firestore, Javascript"
     };
 
     let pbData =
@@ -36,10 +38,13 @@ $(document).ready(function(){
 
     let tbaData =
     {
-        title: "TBA",
-        durationString: "",
-        desc: "...",
-        tech: ""
+        title: "Reminders",
+        durationString: "Aug 2019 - Sep 2019",
+        desc: "This is a web application which provides a yearly notification service. The user creates reminders " +
+                "by setting a date for the event and how many days before the user wants to be reminded. Through a " +
+                "daily check, the application figures out which reminders need to be sent and emails notifications to " +
+                "respective users",
+        tech: "Node.js, Express.js, React.js, Passport.js, Firestore, NodeMailer"
     };
 
     let screenWidth = screen.width;
