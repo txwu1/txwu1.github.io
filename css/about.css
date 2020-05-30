@@ -72,9 +72,9 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	height: 250px;
-	min-height: 250px;
-	min-width: 250px;
-	max-width: 50%;
+	width: 250px;
+	object-fit: contain;
+	background-color: white;
 }
 
 .center_card{
@@ -156,4 +156,11 @@ i {
 
 .hidden{
 	display: none !important;
+}
+
+.logo-img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
 }
