@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com; script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com; object-src 'none'">
 	<link href="../css/about.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -21,7 +23,7 @@
 					<div class="col fill_space">
 					</div>
 					<div class="col">
-						<img id="profile_img" class="circle_img" src="../pictures/IMG_2344.JPG">	
+						<img id="profile_img" class="circle_img" src="../pictures/Thamos Foto.jpg">	
 					</div>
 					<div class="col fill_space">
 					</div>
@@ -74,6 +76,48 @@
 					<h1>Experience</h1>
 				</div>
 			</div>
+			<div class="row my-2">
+					<div class="card center_card">
+						<div class="card-body">
+							<div class="row">
+								<img class="mx-auto mb-4 logo-img" src="../pictures/display-pic.png">
+							</div>
+							<h5 class="card-title" style="text-align: center">UCSD Dragon Boat</h5>
+							<div class="d-flex mw-100">
+								<div class="col py-0">
+									<h6 class="card-subtitle">Webmaster</h6>
+								</div>
+								<div class="col px-0">
+									<h6 class="card-subtitle text-right">May 2019 - Present</h6>
+								</div>
+							</div>
+							<ul class="card-text" style="list-style-type: square">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<div class="row my-2">
+					<div class="card center_card">
+						<div class="card-body">
+							<h5 class="card-title" style="text-align: center">Brain Balance</h5>
+							<div class="d-flex mw-100">
+								<div class="col py-0">
+									<h6 class="card-subtitle">Sensory Motor Coach</h6>
+								</div>
+								<div class="col px-0">
+									<h6 class="card-subtitle text-right">July 2019 - Sep 2019</h6>
+								</div>
+							</div>
+							<ul class="card-text" style="list-style-type: square">
+								<li>supported children, often with mental disabilities or behavioral difficulties, by instructing and encouraging them through set activities</li>
+								<li>evaluated their actions and devised changes to activities to gradually improve their performance or conduct</li>
+								<li>created and tailored math lessons to further aid cognitive development</li>
+								<li>maintained cleanliness and operation of the facility</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			<div class="row">
 				<div class="card center_card">
 					<div class="card-body">
@@ -108,6 +152,11 @@
 			<div class="row mx-auto flex-nowrap">
 				<ul class="nav nav-tabs mx-auto border-0">
 					<li class="p-0 project">
+						<button id="tbd" class="nav-link p-0 border-0 rounded-0 mx-2">
+							<img class="img-project rounded-circle" src="../pictures/corgi.jpeg">
+						</button>
+					</li>
+					<li class="p-0 project">
 						<button id="ziplog" class="nav-link p-0 border-0 rounded-0 mx-2">
 							<img class="border img-project rounded-circle" src="../pictures/ziplog.png">
 						</button>
@@ -115,11 +164,6 @@
 					<li class="p-0 project">
 						<button id="personalbest" class="nav-link p-0 border-0 rounded-0 mx-2">
 							<img class="img-project rounded-circle" src="../pictures/running-man.jpg">
-						</button>
-					</li>
-					<li class="p-0 project">
-						<button id="tbd" class="nav-link p-0 border-0 rounded-0 mx-2">
-							<img class="img-project rounded-circle" src="../pictures/corgi.jpeg">
 						</button>
 					</li>
 				</ul>
