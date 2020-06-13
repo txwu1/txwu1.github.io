@@ -2,43 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://stackpath.bootstrapcdn.com https://kit-free.fontawesome.com; script-src 'self' https://ajax.googleapis.com https://kit.fontawesome.com; object-src 'none'; font-src https://kit-free.fontawesome.com">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://stackpath.bootstrapcdn.com https://kit-free.fontawesome.com 'unsafe-inline'; script-src 'self' https://ajax.googleapis.com https://kit.fontawesome.com; object-src 'none'; font-src https://kit-free.fontawesome.com">
 	<meta name="viewport" content="width=device-width". intial-scale="1.0">
 	<title>Thomas Wu</title>
 	<link rel="icon" href="pictures/running-man-3.png" type="image/jpg">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/about.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/5dbf273fdf.js"></script>
+	<script src="javascript/index.js"></script>
+	<script src="javascript/project.js"></script>
 <head>
 <body>
-	<div class="container-fluid">
-		<div class="container-fluid home px-0">
+	<div class="container-fluid full-screen">
+		<div class="container-fluid home px-0 center-parent full-screen">
 			<div class="home_pic_body">
 				<div class="row mx-auto px-auto">
 					<div class="col"></div>
 					<div class="col">
-						<a class="link_to_about" href="html/about.html">
+						<a class="link_to_about">
 							<img class="profile_pic mx-auto" src="pictures/Profile-pic-2.jpg">
 						</a>
 					</div>
 					<div class="col"></div>
 				</div>
-				<a class="link_to_about" href="html/about.html"><p class="display-2 home_title">Thomas Wu</p></a>
-				<span>
-					Computer Science (B.S.) major  at the University of California, San Diego.
+				<a class="link_to_about"><p class="display-2 home_title">Thomas Wu</p></a>
+				<span class="mx-2 mx-sm-auto">
+					Computer Science (B.S.) major at the University of California, San Diego.
 				</span>
 			</div>
 			<div class="home_desc">
-				<p class="card-body text-left text-sm-center">Hi! I am currently a Junior at UC San Diego, trying to gain more experience in software development
+				<p class="card-body text-left text-sm-center">Hi! I am a rising Senior at UC San Diego, trying to gain more experience in software development
 					while exploring the realm of machine/deep learning.
 					Outside of computer science, I spend my time engaged in sports/physical activities,
 					which include playing basketball, paddling for my dragonboat team,
 					going on hikes and long distance runs, or watching NBA games.
 					I also enjoy watching various dramas and television series to relax.
 				</p>
-				<p>Feel free to <a href="html/about.html"><span>learn more about me</span></a></p>
-				<p>And use the links below to contact me.</p>
+				<h4>Contact me using the links below</h4>
 			</div>
 			<div class="container-fluid home_contact">
 				<div class="row">
@@ -58,6 +60,78 @@
 					</div>
 					<div class="col"></div>
 				</div>
+				<div class="container-fluid about-transition-block mt-1">
+					<div><span>Learn More About Me</span></div>
+					<div><i class="fas fa-chevron-down"></i></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="container-fluid px-0 px-sm-1 about-block display-off">
+				<hr class="m-0">
+
+				<div class="container-fluid pb-5">
+					<div class="row">
+						<div class="header_txt">
+							<h1>Projects</h1>
+						</div>
+					</div>
+					<div class="row mx-auto flex-nowrap">
+						<ul class="nav nav-tabs mx-auto border-0">
+							<li class="p-0 project">
+								<button id="phantime" class="nav-link p-0 border-0 rounded-0 mx-2">
+									<a href="https://cse112teamphantom.github.io">
+										<img class="img-project rounded-circle" src="pictures/logo.png">
+									</a>
+								</button>
+							</li>
+							<li class="p-0 project">
+								<button id="tbd" class="nav-link p-0 border-0 rounded-0 mx-2">
+									<a href="https://github.com/txwu1/Reminders">
+										<img class="img-project rounded-circle" src="pictures/corgi.jpeg">
+									</a>
+								</button>
+							</li>
+							<li class="p-0 project">
+								<button id="ziplog" class="nav-link p-0 border-0 rounded-0 mx-2">
+									<a href="https://github.com/txwu1/SummerWorkouts">
+										<img class="border img-project rounded-circle" src="pictures/ziplog.png">
+									</a>
+								</button>
+							</li>
+							<li class="p-0 project">
+								<button id="personalbest" class="nav-link p-0 border-0 rounded-0 mx-2">
+									<img class="img-project rounded-circle" src="pictures/running-man.jpg">
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div id="project-container" class="row mt-3 hidden">
+						<div id="project-card" class="card center_card mw-650">
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid dark-container pb-5">
+					<div class="header_txt">
+						<h1>Technical Skills</h1>
+					</div>
+					<div class="card center_card mw-750">
+						<div class="row mx-3 my-1">
+							<span><strong>Languages: &nbsp</strong>Java, Python, JavaScript, C++, HTML, CSS</span>
+						</div>
+						<div class="row mx-3 my-1">
+							<span><strong>Libaries/Frameworks: &nbsp</strong>jQuery, Node.js, Express.js, Express Handlebars, Firebase/Firestore, Bootstrap,
+								.NET MVC, Kendo UI, NumPy, React.js
+							</span>
+						</div>
+						<div class="row mx-3 my-1">
+							<span><strong>Other: &nbsp</strong>Vim, Unix, Git/Github, Balsamiq, GDB, Agile Development</span>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</div>

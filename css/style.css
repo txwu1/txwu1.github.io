@@ -19,7 +19,6 @@ body{
 }
 
 .home_pic_body{
-
 }
 
 .profile_pic{
@@ -45,21 +44,99 @@ body{
 	text-decoration: none;
 }
 
-.home_title{
-
-}
-
 .home_desc{
 	margin-top: 3rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.home-desc h4{
+	font-weight: 500;
+}
+
 .home_contact{
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 	font-size: 150%;
 	color: rgba(0, 35, 235, 0.685);
 }
 
 .col a{
 	color: inherit;
+}
+
+.full-screen{
+	height: 100%;
+	min-height: 100%;
+}
+
+
+.center-parent{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ABOUT TRANSITION*/
+.about-transition-block{
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	width: 40%;
+}
+
+.about-transition-block:hover{
+	cursor: pointer;
+}
+
+.about-transition-block:hover span{
+	font-size: 30px;
+}
+
+.display-on{
+	display: block;
+}
+
+.display-off{
+	display: none;
+}
+
+.about-block{
+	height: 100%;
+}
+
+
+@media screen and (max-height: 850px) and (max-width: 700px){
+	.home_title{
+		font-size: 24px;
+	}
+	
+	.home_desc{
+		font-size: 14px;
+		margin-top: 0.5rem;
+	}
+
+	.home_desc h4{
+		font-size: 1rem;
+	}
+
+	.about-transition-block{
+		font-size: 20px;
+		width: 70%;
+	}
+	
+	.about-transition-block:hover span{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	body{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-height: 750px){
+	.full-screen{
+		height: auto;
+	}
 }
