@@ -19,6 +19,7 @@ body{
 }
 
 .home_pic_body{
+	font-weight: 600;
 }
 
 .profile_pic{
@@ -45,7 +46,7 @@ body{
 }
 
 .home_desc{
-	margin-top: 3rem;
+	margin-top: 1rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -121,7 +122,7 @@ body{
 
 	.about-transition-block{
 		font-size: 20px;
-		width: 70%;
+		width: 80%;
 	}
 	
 	.about-transition-block:hover span{
@@ -131,7 +132,16 @@ body{
 
 @media screen and (max-width: 400px){
 	body{
-		font-size: 16px;
+		font-size: 12px;
+	}
+
+	.home_pic_body{
+		font-size: 14px;
+	}
+
+	.profile_pic{
+		height: 200px;
+		width: 200px;
 	}
 }
 
